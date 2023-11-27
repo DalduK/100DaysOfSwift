@@ -36,7 +36,7 @@ I’ll be providing all the material you need to follow along, so all you need t
 
 ## Progress
 
-### Day 1 - 15 - StormViewer ⛈️
+### Day 1 - 18 - StormViewer ⛈️
 
 I've completed the Project 1 StormViewer. 
 

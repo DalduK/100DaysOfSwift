@@ -43,6 +43,9 @@ I've completed the Project 1 StormViewer.
 ### Day 18 - 21 - Guess the flag 🇵🇱
 Guess the flag - simple game, that shows you 3 flags, and you have to select correct one. Completed. 
 
+### Day 22 - Extended Project 1 and 2 
+Project 1 and 2 are extended with share functionalities. Completed
+
 ## Acknowledgements
 Paul Hudson for creating the "100 Days of Swift" challenge and providing valuable resources. (https://www.hackingwithswift.com/)
 

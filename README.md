@@ -46,6 +46,9 @@ Guess the flag - simple game, that shows you 3 flags, and you have to select cor
 ### Day 22 - Extended Project 1 and 2 
 Project 1 and 2 are extended with share functionalities. Completed
 
+### Day 23 - Milestone 1 
+Project that is all of the 3 earlier projects joind together has been completed. 
+
 ## Acknowledgements
 Paul Hudson for creating the "100 Days of Swift" challenge and providing valuable resources. (https://www.hackingwithswift.com/)
 

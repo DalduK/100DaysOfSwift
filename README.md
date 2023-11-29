@@ -49,7 +49,7 @@ Project 1 and 2 are extended with share functionalities. Completed
 ### Day 23 - Milestone 1 
 Project that is all of the 3 earlier projects joind together has been completed. 
 
-### Day 24 - 26 - Milestone 1 
+### Day 24 - 26 - Project 4 
 Project 4 is completed. It's simple web browser using WKWebView. 
 
 ## Acknowledgements

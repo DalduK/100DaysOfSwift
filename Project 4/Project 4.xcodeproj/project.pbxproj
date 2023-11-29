@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB9FFAA92B17D31D00E28F77 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9FFAA82B17D31D00E28F77 /* WebViewController.swift */; };
 		FBC221022B161E230029E87F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC221012B161E230029E87F /* AppDelegate.swift */; };
 		FBC221042B161E230029E87F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC221032B161E230029E87F /* SceneDelegate.swift */; };
 		FBC221062B161E230029E87F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC221052B161E230029E87F /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FB9FFAA82B17D31D00E28F77 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		FBC220FE2B161E230029E87F /* Project 4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBC221012B161E230029E87F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBC221032B161E230029E87F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				FBC221012B161E230029E87F /* AppDelegate.swift */,
 				FBC221032B161E230029E87F /* SceneDelegate.swift */,
 				FBC221052B161E230029E87F /* ViewController.swift */,
+				FB9FFAA82B17D31D00E28F77 /* WebViewController.swift */,
 				FBC221072B161E230029E87F /* Main.storyboard */,
 				FBC2210A2B161E250029E87F /* Assets.xcassets */,
 				FBC2210C2B161E260029E87F /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				FBC221062B161E230029E87F /* ViewController.swift in Sources */,
 				FBC221022B161E230029E87F /* AppDelegate.swift in Sources */,
 				FBC221042B161E230029E87F /* SceneDelegate.swift in Sources */,
+				FB9FFAA92B17D31D00E28F77 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

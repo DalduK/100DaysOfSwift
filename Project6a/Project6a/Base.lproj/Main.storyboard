@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KBO-NJ-hJw">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project6a" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jol-yk-Jom">
+                                <rect key="frame" x="84.666666666666686" y="103" width="224" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Jol-yk-Jom" secondAttribute="height" multiplier="112:57" id="opV-7g-sEW"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="poland"/>
+                                <connections>
+                                    <action selector="flagPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wzt-cb-mfD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7BD-ac-DWD">
+                                <rect key="frame" x="84.666666666666686" y="371" width="224" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7BD-ac-DWD" secondAttribute="height" multiplier="112:57" id="X6q-Uz-8FP"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="poland"/>
+                                <connections>
+                                    <action selector="flagPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GqE-8i-iMo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o2Y-7z-aVY">
+                                <rect key="frame" x="84.666666666666686" y="237" width="224" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="o2Y-7z-aVY" secondAttribute="height" multiplier="112:57" id="Yxp-CY-GIB"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="poland"/>
+                                <connections>
+                                    <action selector="flagPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sIh-Jb-0sk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="o2Y-7z-aVY" firstAttribute="height" secondItem="Jol-yk-Jom" secondAttribute="height" id="090-sL-c4g"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="7BD-ac-DWD" secondAttribute="bottom" constant="20" id="JIJ-qd-XGa"/>
+                            <constraint firstItem="Jol-yk-Jom" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="QNz-UV-brV"/>
+                            <constraint firstItem="7BD-ac-DWD" firstAttribute="height" secondItem="Jol-yk-Jom" secondAttribute="height" id="XEn-cQ-hvF"/>
+                            <constraint firstItem="7BD-ac-DWD" firstAttribute="top" secondItem="o2Y-7z-aVY" secondAttribute="bottom" constant="20" id="aaD-th-95F"/>
+                            <constraint firstItem="o2Y-7z-aVY" firstAttribute="top" secondItem="Jol-yk-Jom" secondAttribute="bottom" constant="20" id="bEO-bh-eg4"/>
+                            <constraint firstItem="o2Y-7z-aVY" firstAttribute="centerX" secondItem="Jol-yk-Jom" secondAttribute="centerX" id="kZq-du-TBA"/>
+                            <constraint firstItem="Jol-yk-Jom" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="lMU-aJ-1DF"/>
+                            <constraint firstItem="7BD-ac-DWD" firstAttribute="centerX" secondItem="o2Y-7z-aVY" secondAttribute="centerX" id="pfv-M1-Sg4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="KkA-f6-9Q3"/>
+                    <connections>
+                        <outlet property="bottomFlag" destination="7BD-ac-DWD" id="bfi-Z7-FXS"/>
+                        <outlet property="middleFlag" destination="o2Y-7z-aVY" id="v0v-2p-3KY"/>
+                        <outlet property="topFlag" destination="Jol-yk-Jom" id="ODx-Od-iQR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="947.32824427480909" y="3.5211267605633805"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="IHO-f4-4e0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KBO-NJ-hJw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yJV-hU-Y2O">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Di8-w7-oi6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qxz-Ec-2S6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20.610687022900763" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="poland" width="200" height="100"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

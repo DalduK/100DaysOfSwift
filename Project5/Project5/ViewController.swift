@@ -13,6 +13,8 @@ class ViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "DefaultCell")
+
         // Do any additional setup after loading the view.
         if let startWords = Bundle.main.path(forResource: "start", ofType: ".txt") {
             if let startsWord = try? String(contentsOfFile: startWords) {

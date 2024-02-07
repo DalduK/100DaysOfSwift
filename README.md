@@ -61,6 +61,9 @@ Project 6 is completed. Fixed project 2 with auto layout.
 ### Day 32 - Milestone 2 
 Joined project from ideas used in projects 4-6. Simple shopping list.
 
+### Day 33-35 - Project 7
+Codable and TabBar project.
+
 ## Acknowledgements
 Paul Hudson for creating the "100 Days of Swift" challenge and providing valuable resources. (https://www.hackingwithswift.com/)
 

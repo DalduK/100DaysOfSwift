@@ -52,6 +52,15 @@ Project that is all of the 3 earlier projects joind together has been completed.
 ### Day 24 - 26 - Project 4 
 Project 4 is completed. It's simple web browser using WKWebView. 
 
+### Day 27 - 29 - Project 5
+Project 5, game of words created with table View.
+
+### Day 29 - 31 - Project 6
+Project 6 is completed. Fixed project 2 with auto layout. 
+
+### Day 32 - Milestone 2 
+Joined project from ideas used in projects 4-6. Simple shopping list.
+
 ## Acknowledgements
 Paul Hudson for creating the "100 Days of Swift" challenge and providing valuable resources. (https://www.hackingwithswift.com/)
 

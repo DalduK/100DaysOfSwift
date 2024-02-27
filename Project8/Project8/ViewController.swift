@@ -108,9 +108,12 @@ class ViewController: UIViewController {
                 letterButton.titleLabel?.font = UIFont.systemFont(ofSize: 36)
                 letterButton.setTitle("WWW", for: .normal)
                 
-                let frame = CGRect(x: column * width, y: row * height, width: width, height: height)
+                let frame = CGRect(x: column * width, y: row * height, width: width - 10, height: height - 10)
                 letterButton.frame = frame
                 letterButton.addTarget(self, action: #selector(letterTapped), for: .touchUpInside)
+                letterButton.layer.cornerRadius = 10
+                letterButton.layer.borderWidth = 1
+                letterButton.layer.borderColor = UIColor.gray.cgColor
                 buttonsView.addSubview(letterButton)
                 letterButtons.append(letterButton)
             }
@@ -126,10 +129,12 @@ class ViewController: UIViewController {
             scoreLabel.text = "Score: \(score)"
         }
     }
+    var countedValues = 0
     var level = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadLevel()
         // Do any additional setup after loading the view.
     }
     
@@ -152,12 +157,18 @@ class ViewController: UIViewController {
             
             currentAnswer.text = ""
             score += 1
+            countedValues += 1
             
-            if score % 7 == 0 {
+            if countedValues % 7 == 0 {
                 let ac = UIAlertController(title: "Well done!", message: "Are you ready for the next level?", preferredStyle: .alert)
                 ac.addAction(UIAlertAction(title: "Let's go!", style: .default, handler: levelUp))
                 present(ac, animated: true)
             }
+        } else {
+            score -= 1
+            let ac = UIAlertController(title: "The answer is wrong", message: "Can you replay it?", preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "Sure!", style: .default, handler: clearUp))
+            present(ac, animated: true)
         }
     }
 
@@ -171,9 +182,19 @@ class ViewController: UIViewController {
         activityButtons.removeAll()
     }
     
+    @objc func clearUp(_ sender: UIAlertAction) {
+        currentAnswer.text = ""
+        
+        for btn in activityButtons {
+            btn.isHidden = false
+        }
+        
+        activityButtons.removeAll()
+    }
+    
     @objc func levelUp(_ sender: UIAlertAction) {
         level += 1
-        solutions.removeAll(keepingCapacity: true)
+        solutions.removeAll()
         
         loadLevel()
         

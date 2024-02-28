@@ -28,15 +28,15 @@ class ViewController: UITableViewController  {
             // urlString = "https://api.whitehouse.gov/v1/petitions.json?signatureCountFloor=10000&limit=100"
             urlString = "https://www.hackingwithswift.com/samples/petitions-2.json"
         }
-
-        if let url = URL(string: urlString) {
-            if let data = try? Data(contentsOf: url) {
-                parse(json: data)
-                return
+        DispatchQueue.global(qos: .userInitiated).async {
+            if let url = URL(string: urlString) {
+                if let data = try? Data(contentsOf: url) {
+                    self.parse(json: data)
+                    return
+                }
             }
+            self.showError()
         }
-
-        showError()
     }
     
     @objc func presentAlert() {
@@ -55,13 +55,13 @@ class ViewController: UITableViewController  {
             self.filteredPetition = self.petitions.filter({ petition in
                 petition.title.lowercased().contains(answer.text?.lowercased() ?? "")
             })
-            self.tableView.reloadData()
+            self.reloadData()
         }
         
         let clear = UIAlertAction(title: "Clear", style: .default) { _ in
             self.filteredPetition = self.petitions
             // do something interesting with "answer" here
-            self.tableView.reloadData()
+            self.reloadData()
         }
 
         ac.addAction(submitAction)
@@ -70,13 +70,19 @@ class ViewController: UITableViewController  {
         present(ac, animated: true)
     }
     
+    func reloadData() {
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
+    }
+    
     func parse(json: Data) {
         let decoder = JSONDecoder()
 
         if let jsonPetitions = try? decoder.decode(Petitions.self, from: json) {
             petitions = jsonPetitions.results
             filteredPetition = petitions
-            tableView.reloadData()
+            self.reloadData()
         }
     }
     

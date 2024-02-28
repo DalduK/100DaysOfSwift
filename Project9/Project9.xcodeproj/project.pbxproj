@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FB52D4412B739CBE00211A02 /* Project7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project7.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB52D4412B739CBE00211A02 /* Project9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project9.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB52D4442B739CBE00211A02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB52D4462B739CBE00211A02 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FB52D4482B739CBE00211A02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		FB52D4382B739CBE00211A02 = {
 			isa = PBXGroup;
 			children = (
-				FB52D4432B739CBE00211A02 /* Project7 */,
+				FB52D4432B739CBE00211A02 /* Project9 */,
 				FB52D4422B739CBE00211A02 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,12 +54,12 @@
 		FB52D4422B739CBE00211A02 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FB52D4412B739CBE00211A02 /* Project7.app */,
+				FB52D4412B739CBE00211A02 /* Project9.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FB52D4432B739CBE00211A02 /* Project7 */ = {
+		FB52D4432B739CBE00211A02 /* Project9 */ = {
 			isa = PBXGroup;
 			children = (
 				FB52D4442B739CBE00211A02 /* AppDelegate.swift */,
@@ -73,15 +73,15 @@
 				FB847B822B8F477900EEE167 /* Petitions.swift */,
 				FB847B842B8F48BF00EEE167 /* DetailViewController.swift */,
 			);
-			path = Project7;
+			path = Project9;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FB52D4402B739CBE00211A02 /* Project7 */ = {
+		FB52D4402B739CBE00211A02 /* Project9 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FB52D4552B739CE600211A02 /* Build configuration list for PBXNativeTarget "Project7" */;
+			buildConfigurationList = FB52D4552B739CE600211A02 /* Build configuration list for PBXNativeTarget "Project9" */;
 			buildPhases = (
 				FB52D43D2B739CBE00211A02 /* Sources */,
 				FB52D43E2B739CBE00211A02 /* Frameworks */,
@@ -91,9 +91,9 @@
 			);
 			dependencies = (
 			);
-			name = Project7;
+			name = Project9;
 			productName = Project7;
-			productReference = FB52D4412B739CBE00211A02 /* Project7.app */;
+			productReference = FB52D4412B739CBE00211A02 /* Project9.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -111,7 +111,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FB52D43C2B739CBE00211A02 /* Build configuration list for PBXProject "Project7" */;
+			buildConfigurationList = FB52D43C2B739CBE00211A02 /* Build configuration list for PBXProject "Project9" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -124,7 +124,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FB52D4402B739CBE00211A02 /* Project7 */,
+				FB52D4402B739CBE00211A02 /* Project9 */,
 			);
 		};
 /* End PBXProject section */
@@ -306,7 +306,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = J2QYS83JR9;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Project7/Info.plist;
+				INFOPLIST_FILE = Project9/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +317,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = PWozny.Project7;
+				PRODUCT_BUNDLE_IDENTIFIER = PWozny.Project9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -334,7 +334,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = J2QYS83JR9;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Project7/Info.plist;
+				INFOPLIST_FILE = Project9/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -345,7 +345,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = PWozny.Project7;
+				PRODUCT_BUNDLE_IDENTIFIER = PWozny.Project9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -356,7 +356,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FB52D43C2B739CBE00211A02 /* Build configuration list for PBXProject "Project7" */ = {
+		FB52D43C2B739CBE00211A02 /* Build configuration list for PBXProject "Project9" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FB52D4532B739CE600211A02 /* Debug */,
@@ -365,7 +365,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FB52D4552B739CE600211A02 /* Build configuration list for PBXNativeTarget "Project7" */ = {
+		FB52D4552B739CE600211A02 /* Build configuration list for PBXNativeTarget "Project9" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FB52D4562B739CE600211A02 /* Debug */,
